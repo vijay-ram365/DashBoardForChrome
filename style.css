@@ -1,0 +1,78 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#container {
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.weather-section {
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+  width: fit-content;
+  padding: 1em 1.5em;
+  margin: 1em;
+  border-radius: 10px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
+}
+
+.weather-section > img {
+  width: 150px;
+}
+
+.date-section {
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  animation: ease 3s;
+}
+
+.date-section > p {
+  padding: 2em;
+  animation: ease 3s;
+}
+
+.funfact-section {
+  color: #fff;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.7rem;
+  font-family: "Arima Madurai", cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 1em;
+  position: absolute;
+  left: 50%;
+  bottom: 5em;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  animation: fadein 3s;
+}
+
+.funfact-section > p {
+  margin-top: 0;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
