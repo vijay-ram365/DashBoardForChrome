@@ -46,19 +46,19 @@ setInterval(dateAndTime, 1000);
 
 // Fun Fact API from GITHUB free API repo
 
-const funFactUrl = "https://api.aakhilv.me/fun/facts";
+// const funFactUrl = "https://api.aakhilv.me/fun/facts";
 
-async function getFunFact() {
-  const response = await fetch(funFactUrl);
-  const data = await response.json();
+// async function getFunFact() {
+//   const response = await fetch(funFactUrl);
+//   const data = await response.json();
 
-  document.getElementById("funfact-app").innerHTML = `
-        <small>Fun Fact:</small>
-        <p>${data[0]}</p>
-   `;
-}
+//   document.getElementById("funfact-app").innerHTML = `
+//         <small>Fun Fact:</small>
+//         <p>${data[0]}</p>
+//    `;
+// }
 
-getFunFact().catch((error) => {
-  console.log(`No Data Available: Error ${error}`);
-});
+// getFunFact().catch((error) => {
+//   console.log(`No Data Available: Error ${error}`);
+// });
 //--------------------------------------------
